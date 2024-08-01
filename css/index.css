@@ -1,0 +1,106 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #8052ec, #d161ff);
+}
+
+.container {
+    width: 90%;
+    /* min-width: 450px; */
+    /* border: 2px solid #fff; */
+    padding: 30px 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container #newTask {
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container #newTask input {
+    width: 100%;
+    padding: 15px 10px;
+    border-radius: 5px;
+    border: 2px solid #d1d3d4;
+    font-weight: bold;
+    font-size: 16px;
+    color: #111111;
+    margin-bottom: 20px;
+}
+
+.container #newTask input:focus {
+    outline: none;
+    border: 2px solid #8052ec;
+}
+
+.container #newTask button {
+    width: 70px;
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    background-color: #8052ec;
+    color: #fff;
+    cursor: pointer;
+}
+/* =============================================================== */
+/* =============================================================== */
+/* =============================================================== */
+.container #tasks {
+    background-color: #fff;
+    padding: 30px 20px;
+    margin-top: 60px;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    max-height: 62vh;
+    overflow: auto;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+#tasks .task {
+    padding: 20px 20px;
+    /* margin-top: 30px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #d1d3d4;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+#tasks .task span {
+    width: 70%;
+    font-weight: bold;
+    font-size: 17px;
+    overflow: hidden;
+}
+
+#tasks .task button {
+    padding: 10px;
+    font-size: 17px;
+    background-color: #8052ec;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}

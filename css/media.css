@@ -1,0 +1,47 @@
+/* XSmall */
+@media screen and (min-width: 470px) {
+    .container {
+        width: 85%;
+    }
+
+    .container #newTask {
+        flex-direction: row;
+    }
+
+    .container #newTask input {
+        width: 70%;
+        margin-bottom: 0px;
+        padding: 15px 25px;
+    }
+
+    #tasks .task span {
+        width: 85%;
+    }
+}
+
+/* Small */
+@media screen and (min-width: 640px) {
+    .container {
+        width: 70%;
+    }
+}
+
+/* Medium */
+@media screen and (min-width: 868px) {
+    .container {
+        width: 60%;
+    }
+}
+
+/* Large */
+@media screen and (min-width: 1024px) {
+    .container {
+        width: 50%;
+    }
+}
+
+/* XLarge */
+@media screen and (min-width: 1280px) {}
+
+/* 2XLarge*/
+@media screen and (min-width: 1536px) {}
